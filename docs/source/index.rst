@@ -25,6 +25,9 @@ If you're new, be sure to look at the :ref:`beginner<settingup>` page!
    learningmodule1
    learningmodule2
    learningmodule3
+   learningmodule4
+   learningmodule5
+   learningmodule6
 
 .. toctree::
    :maxdepth: 2
