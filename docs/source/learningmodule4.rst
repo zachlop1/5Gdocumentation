@@ -9,9 +9,9 @@ Technical Details of RAN Systems
 ----------------------------------
 
 Upon active use or powered on state of the UEs, each base station sets the wireless channel for the device allowing for a connection from the UE to the base station. This connection is referred to as “bearer service” and is used for data transmission
-Base stations sets up a connection between the user’s device and the network’s control center. (Refer to to NG-Core overview for more information on control center). This connection results in service actions such as user authentication and tracking.
-For each active users or UEs, the base station sets up a connection to the network’s user plane component, or the network component responsible for handling the functions such as carrying user data, which is then used for transmitting data. The previous generation had been limited to generally only two mobile core user plane components such as voice and data. However, 5G integration has allowed for multiolple user plane components as part of a network slicing mechanism
-The base station then sends both control and data packets between the user’s device and the network. These packets are sent through different protocols dependingon the type of packets. The base stations will then coordinate with one another in order to verify a smooth handover between connections.
+Base stations sets up a connection between the user’s device and the network’s control center. (Refer to NG-Core overview for more information on control center). This connection results in service actions such as user authentication and tracking.
+For each active users or UEs, the base station sets up a connection to the network’s user plane component, or the network component responsible for handling the functions such as carrying user data, which is then used for transmitting data. The previous generation had been limited to generally only two mobile core user plane components such as voice and data. However, 5G integration has allowed for multiple user plane components as part of a network slicing mechanism
+The base station then sends both control and data packets between the user’s device and the network. These packets are sent through different protocols depending on the type of packets. The base stations will then coordinate with one another in order to verify a smooth handover between connections.
 Again, with the coordination of multiple base stations, data is then transmitted to the user’s device through packets, thus, completing the loop.
 
 5G RAN Overview
