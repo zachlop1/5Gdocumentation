@@ -1,32 +1,27 @@
-Technical Details of RAN Systems
+5G Networking in Rural Locations
 =================================
 
 Abstract
 ---------
-Radio access network, or RAN, is the component of the network that allows for user devices to connect to the core network. Consisting of radio base stations and other network elements, this setup is responsible for wireless communication with user devices/equipment through means of radio waves and is also responsible for managing the radio resources and ensuring that user devices can communicate with the core network. Within a 5G setting, the RAN uses new radio technology and frequency bands to provide high-speed, low-latency, and reliable connectivity for a wide range of devices and applications such as autonomous vehicles, smart agriculture, factory automation, etc.
+5G Networking is a newer technology that is hard to establish in rural areas. The infrastructure required to support this technology is not feasible for these low-cost rural areas. This coincides with the low population density in these areas - there isn’t much of a point in building 5G technologies in an area that doesn’t have enough people to justify its deployment. Another challenge for these rural areas is the obstacles to transmitting 5G signals. 5G technology utilizes millimeter waves (Discussed in “Radio Technologies Utilized for 5G RAN” module). This means that in these rural areas, the signals will also have a tough time traveling far or transmitting through obstacles - certainly another problem in rural areas.
 
-Technical Details of RAN Systems
-----------------------------------
+Coverage and Infrastructure
+---------------------------
 
-Upon active use or powered on state of the UEs, each base station sets the wireless channel for the device allowing for a connection from the UE to the base station. This connection is referred to as “bearer service” and is used for data transmission
-Base stations sets up a connection between the user’s device and the network’s control center. (Refer to to NG-Core overview for more information on control center). This connection results in service actions such as user authentication and tracking.
-For each active users or UEs, the base station sets up a connection to the network’s user plane component, or the network component responsible for handling the functions such as carrying user data, which is then used for transmitting data. The previous generation had been limited to generally only two mobile core user plane components such as voice and data. However, 5G integration has allowed for multiolple user plane components as part of a network slicing mechanism
-The base station then sends both control and data packets between the user’s device and the network. These packets are sent through different protocols dependingon the type of packets. The base stations will then coordinate with one another in order to verify a smooth handover between connections.
-Again, with the coordination of multiple base stations, data is then transmitted to the user’s device through packets, thus, completing the loop.
+5G coverage in rural areas is typically limited. In cases where the technology is found in rural areas, it is usually next to major highways or town centers. This limited coverage is partly due to the infrastructure it requires to establish this service. According to some studies, establishing 5G technologies in a small town can cost anywhere from $10 million to $30 million. This cost is usually paid for by service providers that look to make money back from customers in the area, but one of the challenges of deployment in rural areas is the lack of population. 
 
-5G RAN Overview
------------------
+As stated above, small cells can increase coverage in rural areas where traditional macrocellular networks may not be practical or cost-effective. Even with the available technology of small cells, deploying such cells may still be impractical for rural areas due to other factors regarding limited power, rugged terrain, and even lower population density. Other technologies, such as satellite communications, may be more cost-effective. 
 
-Base stations make up a large part of the radio access network (RAN) and play an essential role in communication. They are responsible for many tasks, including transmitting and receiving signals with user equipment. Base stations are also in charge of managing resources; this can include managing bandwidth, power, and time slots in accordance with user equipment. It also performs scheduling and interference management to ensure that users get the best possible connection. Base stations are also in charge of signal processing. This means that signals sent from the UE to the stations are decoded to ensure they are in a form suitable for information processing. Likewise, they are also responsible for encoding signals before transmitting them to UE. This adds a measure of security when transmitting data using 5G.
+This may pose a problem for farming communities as some agriculture equipment, such as tractors and harvesters, may require or benefit from the high-speed network that comes from 5G. Having the necessary infrastructure to support such devices may still be a challenge. This cost-effectiveness and challenge of establishing infrastructure for 5G is a core factor in the slower deployment of 5G in rural areas and communities.
 
-Radio Technologies Utilized for 5G RAN
-----------------------------------------
+Economic Impact
+---------------
 
-One of the technologies implemented in 5G technology is the use of millimeter waves. These waves are used to provide a high-speed, low latency connection especially when in urban areas where a high number of users are present. These signals don’t come without their limitations however. One limitation is the limited range that comes with these signals, meaning they are easily blocked by buildings and trees. These signals also have limited penetration, meaning on top of their limited range they also have hard time penetrating solid objects. This limits the use of this type of signal indoors. These signals are also susceptible to weather, such as rain, fog, and snow.
-One of the ways to overcome this range of limitations is to use beamforming technology (previously mentioned under the 5G User Equipment module), which directs the signals to the UE. Beam
+If 5G technology is accessible in rural areas or communities, it could bring significant economic benefits to the region. For instance, implementing advanced 5G-powered vehicles in agriculture could result in more efficient farming practices, increased food exports, and other related economic gains. 5G technology also allows students in rural areas to have a much more stable learning environment through remote learning. 
+
+Companies typically establish 5G technologies to make money back through their customers. In areas where 5G technologies have deployed, an increase in productivity and connectivity usually follows, which boosts economic growth in the area. New businesses can also arrive once 5G technology is available in rural areas, boosting economic growth.
 
 Quiz
-------------
-
+----
 .. raw:: html
-    :file: Module3quiz.html
+    :file: Module6quiz.html
