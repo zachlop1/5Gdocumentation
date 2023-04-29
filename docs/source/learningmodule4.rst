@@ -21,7 +21,7 @@ Authentication, IP Connectivity, and Bill Tracking
 
 Authentication
 
-* Mobile Core typically uses AKA or Authentication and Key Agreement to authenticate users. A diagram of how AKA works are shown below-
+* Mobile Core typically uses AKA or Authentication and Key Agreement to authenticate users. A diagram of how AKA works are shown below: 
 
 .. figure:: /images/5g-mobile-phone-mast.png
    :alt: 5Gdocumentation
@@ -30,9 +30,9 @@ Authentication
 * AKA provides procedures for mutual authentication of UE and Network
 * Protects against identity theft and fraud
 
-IP Connectivity:
+IP Connectivity: 
 
-* Mobile core capable of using different protocols to assign IP, including:
+* Mobile core capable of using different protocols to assign IP, including: 
 	* Internet Protocol (IP)
 	* Dynamic Host Configuration Protocol (DHCP)
 	* Border Gateway Protocol (BGP)
@@ -43,7 +43,7 @@ Bill Tracking
 
 * Various protocols are in place that tracks network usage and bill users. 
 
-* Protocols include-
+* Protocols include: 
 	* Diameter Protocol - used in LTE and IMS network-side functions. Collects user credentials and sends an access request to the Diameter node, which analyzes information and verifies the authenticity of the user
 	* Charging Data Record (CDR) - a formatted collection of information about a chargeable telecommunication event, and these events can be something like making a phone call or using the internet.
 
