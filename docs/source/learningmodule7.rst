@@ -27,6 +27,10 @@ Functions of 5G RRC Layer
 
 The 5G NR RRC states are the different operational states a UE can be in based on its connection status with the network. These states are defined in the 5G NR standard and are critical in managing the radio resources allocated to the UE. There are three main RRC states in the 5G NR protocol, as shown in the figure.
 
+.. figure:: /images/LearningModule7picture.png
+   :alt: 5Gdocumentation
+   :align: center
+
 RRC_IDLE: The UE is not connected to the network and is in an idle state. During this state, the UE is not assigned any radio resources and is not actively communicating with the network. The UE will still, however, scan periodically for available cells to establish a connection. 
 
 Some actions the UE performs while in RRC idle mode include selecting public land mobile networks to connect to. It also performs the function of cell re-selection mobility. As explained above, it re-evaluates available cells and decides whether to swap to a new cell based on signal strength, quality, and mobility. 
