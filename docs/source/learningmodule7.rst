@@ -1,75 +1,40 @@
-ARA Infrastructure Overview
-===========================
+5G RRC Layer
+============
 
-In the summary section, we discussed that ARA is furnished with a comprehensive assortment of wireless equipment, supporting a wide range of wireless technologies. On the access network side, known as AraRAN, the testbed comprises Software Defined Radios (SDRs) and Commercial-Off-The-Shelf (COTS) platforms functioning in frequencies from low-UHF to millimeter wave (mmWave). Apart from RAN, ARA offers a wireless backhaul among the sites utilizing high-capacity Free Space Optical (FSO) links, mmWave, and microwave links.
+Abstract
+--------
 
-.. image:: images/ara_infrastructure.png
+The 5G RRC (Radio Resource Control) layer is an essential component of the 5G network architecture and protocols that facilitates communications between the UEs and the radio access network. The RRC layer operates in the control plane, ensuring efficient utilization of radio resources by allocating frequency, bandwidth, and power for the user equipment. It works with the user plane to ensure data is transmitted between the UE and the RAN efficiently and securely. It provides signaling and control functions, while the UP handles the data transmission. Together, the RRC layer and the UP ensure that the data is transmitted with the appropriate Quality of Service (QoS) and security level. The primary functions of the 5G RRC layer are critical to the performance of 5G networks.
 
-Wireless Access Network
------------------------
+Functions of 5G RRC Layer
+-------------------------
 
-The Wireless Access Network component of ARA, named AraRAN, encompasses various wireless technologies deployed around Ames, Iowa at specific locations. Key AraRAN components include:
+* UE measurement reporting: UEs have the ability to measure the signal strength of neighboring cells; the RRC layer uses this information to decide which cell or base station the UE should connect to. 
 
-- NI SDR Base Stations (BS) and User Equipment (UE)
-- Skylark Base Station and Customer Premises Equipment (CPE)
-- Ericsson Base Stations and User Equipment
+* Key management security: Ensures communication between the UEs and the network is protected from unauthorized access. 
 
-NI SDR Base Stations and User Equipment
-+++++++++++++++++++++++++++++++++++++++++
+* Broadcasting system information to NAS: RRC layer can send system information to the network access stratum (NAS) about details regarding available radio resources, system parameters, and other network-related information
 
-AraRAN incorporates Software Defined Radio (SDR) based Base Stations (BS) implemented using NI USRP N320. The BSs are set up at four locations: (1) Wilson Hall, (2) Curtiss Farm, (3) Agronomy Farm, and (4) Research Park. The SDRs are linked to Tower Mounted Boosters (TMBs) composed of power amplifiers and low noise amplifiers, supporting n77 TDD. The connection uses low attenuation AVA5-50 RF cables from CommScope. The TMB is connected to a CommScope antenna via LMR400 jumper cables. The radios and front-ends operate within the 3400–3600 MHz frequency band. Each BS is furnished with three sectors, with three USRP N320s connected to a single COTS server. That is, three concurrent experiments can be carried out at each base station using virtualization through Docker containers running the 5G stack. The equipment's detailed specifications mentioned above are highlighted below. The SDRs are connected to Dell servers via high-speed 10G SFP+ interfaces.
+* Quality of service management: RRC layer is also responsible for managing the quality of service management, which ensures that UEs receive the appropriate level of service based on their traffic requirements and network conditions.
 
-In addition to BSs, the User Equipment in AraRAN is realized using NI USRP B210 radios. The UEs are dispersed across Ames in different regions, including Central Ames, Curtiss Farm, Kitchen Farm, and Agronomy Farm for both agricultural and commercial use cases. This offers the experimenter an opportunity to conduct practical experiments. The UEs are equipped with software-defined radios from National Instrument and corresponding RF front-ends. The USRPs have board-mounted GPSDO for synchronization purposes and are connected to a COTs server to support experimentation. Our UEs are also furnished with NI B205 USRPs for spectrum monitoring purposes. Currently, our UE provides Internet connectivity support to real users around the city of Ames.
+* Radio resource allocation and control: The RRC layer has the responsibility of allocating radio resources to UEs based on their traffic requirements and network conditions
 
-Detailed specifications of SDR BS and UE are provided here.
+* Mobility functions along with cell addition and release: This function allows UEs to always be connected to the most suitable cell, and that handover between cells is a seamless process and won’t result in a network drop while doing so. 
 
-Skylark Base Station and Customer Premises Equipment
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-The Skylark base station of AraRAN consists of three components: Central Units (CU), Distributed Units (DUs), and Radio Units (RUs). In the downlink, CU connects to the DU, which in turn connects to the RU. Conversely, CU connects to a Layer-3 (L3) switch that acts as the gateway.
-
-The customer premises equipment is outfitted with a single Gigabit Ethernet port, enabling connection to the Power over Ethernet (PoE) switch. The switch supplies power and network connectivity to the CPE. A computer is connected to the switch, which is in the same VLAN as the CPE. The computer receives an IP address from the L3 switch at the BS, while the link from CPE to RU-DU-CU operates as an L2 link. The logical diagram of the Skylark deployment is provided below.
-
-.. image:: images/Skylark_Logical_Diagram.png
-
-In Phase-1, ARA features a single Skylark BS deployed at Wilson Hall. The image below illustrates the field deployment snapshot of the Skylark BS. Five additional BSs are planned for subsequent phases. Regarding CPEs, ARA deploys 22 CPEs in Phase-1, distributed across different regions around Ames.
-
-.. image:: images/Skylark_RU_CPE.png
-
-Phase-1 envisions 22 CPEs connecting to the Skylark BS. There are 3x RUs at the BS, each covering a sector of 120 degrees. The three RUs are connected to the DU, which in turn is connected to the CU. As mentioned earlier, each UE computer deployed in the field with an attached CPE receives an IP address from the L3 switch connected to the CU at the BS.
-
-The ARA Resource Specification offers a detailed specification of Skylark.
-
-Backhaul Network
+5G NR RRC States
 ----------------
 
-The backhaul network in ARA, referred to as AraHaul, comprises long-range wireless and free space optical links, along with traditional optical fiber.
+The 5G NR RRC states are the different operational states a UE can be in based on its connection status with the network. These states are defined in the 5G NR standard and are critical in managing the radio resources allocated to the UE. There are three main RRC states in the 5G NR protocol, as shown in the figure.
 
-Micro and Millimeter Wave Backhaul
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
+RRC_IDLE: The UE is not connected to the network and is in an idle state. During this state, the UE is not assigned any radio resources and is not actively communicating with the network. The UE will still, however, scan periodically for available cells to establish a connection. 
 
-For AraHaul, Aviat WTM 4800 radios are used for long-range micro and millimeter wireless links, connecting different base station sites. In Phase-1, a backhaul wireless link is established between Wilson Hall and Agronomy Farm. The wireless link utilizes microwave (11 GHz) and mmWave (80 GHz) frequency bands. The WTM 4800 radios are equipped with one or two transceivers configured for various operational modes, including single transceiver single-band, dual-transceiver single-band, and dual transceiver multi-band. A detailed specification of Aviat radios is described here.
+Some actions the UE performs while in RRC idle mode include selecting public land mobile networks to connect to. It also performs the function of cell re-selection mobility. As explained above, it re-evaluates available cells and decides whether to swap to a new cell based on signal strength, quality, and mobility. 
+    
+RRC_INACTIVE: The UE is connected to the network, but no data is transmitted or exchanged between the UE and the network. During this state, the UE maintains a connection with the network, but no radio resources are allocated. 
 
-Free Space Optical Backhaul
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
+Like the idle state, this state also performs cell re-selection mobility functionality. 5GC to NG-RAN connection is established for the UE during this state. This connection includes both the control and user planes. RAN paging also occurs in this state and is needed if the network needs to send data to the UE while it is in RRC inactive mode, to which the paging procedure wakes up the UE and establishes a connection.
 
-In parallel with the mmWave and microwave Aviat link, AraHaul establishes a long-range free space optical communication link. The link is implemented using custom-made optical telescopes that use a laser of frequency 194THz. In Phase-1, the optical link is established between Wilson Hall and Agronomy Farm.
+RRC_CONNECTED: The UE is connected to the network, and data is transmitted or exchanged between the UE and the network. The UE is assigned radio resources during this state for the connection duration. 
 
-Fiber Backhaul
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-The ARA wired backhaul network is divided into two parts: (1) data network and (2) management network. The data center and the four field sites are connected via both data and management networks. The network connectivity is established using two types of switches for each network type, meaning each site is equipped with separate switches for managing data and management networks.
-
-At the data center, Juniper ACX 7100 is used as the data switch, while field-deployed BS sites utilize Juniper ACX 710. For the management network, Cisco 9300 is employed at the data center, and Cisco 3850 is used at field-deployed BS sites. The four field-deployed BS sites have point-to-point connectivity with the data center via 100G/40G fiber cables. Each switch (data/management) serves as a gateway for local networks connected to devices such as servers and radios. The Open Shortest Path
-
-At the data center, a Juniper ACX 7100 switch is used for the data network, while the field-deployed BS sites employ Juniper ACX 710 switches. For the management network, a Cisco 9300 switch is utilized at the data center, and Cisco 3850 switches are used at the field-deployed BS sites. The four field-deployed BS sites maintain point-to-point connectivity with the data center through 100G/40G fiber cables. Each switch (data/management) functions as a gateway for local networks connected to devices such as servers and radios. The Open Shortest Path First (OSPF) routing protocol is employed between the switches to ensure network reachability.
-
-Compute
--------
-
-In addition to the compute resources available at the BS or UE computers deployed on-site, ARA is furnished with two high-performance compute nodes at the data center. The dedicated compute nodes are realized using Dell PowerEdge R750 servers, equipped with Intel(R) Xeon(R) Gold 63xx CPUs, 384 GB of memory, and 1.92 TB of storage space.
-
-Storage
--------
-
-Like the compute resources, ARA offers users an object storage service for the permanent storage of data. To implement the object storage, two dedicated Dell PowerEdge R750 storage servers are used, featuring Intel(R) Xeon(R) Gold 5317 processors, 128 GB memory, and 14.6 TB of storage. The disks are configured with RAID 5 for redundancy and fault resilience.
+Finally, for the RRC connected state, it’s here in this state where transfer of unicast data to/from the UE occurs in which the data is transmitted from the network to a specific UE, or from a specific UE to the network. The data being transmitted can include user data or control messages. 
