@@ -33,7 +33,14 @@ Authentication
 * Protects against identity theft and fraud
 
 IP Connectivity:
+
+
+
+
 * Mobile core capable of using different protocols to assign IP, including:
+
+
+
 
     * Internet Protocol (IP)
     * Dynamic Host Configuration Protocol (DHCP)
