@@ -27,7 +27,7 @@ Instances and Applications of 5G User Equipment
 -----------------------------------------------
 When comparing user equipment designed around 5G to the previous generations, such as 4G, it’s quite clear that 5G user equipment has the edge according to some of the following factors:
 
-.. figure:: /images/4g5g.png
+.. figure:: /images/4g5g.jpg
    :alt: 5Gdocumentation
    :align: center
 
