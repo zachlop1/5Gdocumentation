@@ -37,7 +37,7 @@ If you're new, be sure to look at the :ref:`beginner<settingup>` page!
    :caption: Experiments
 
    experiments
-   ARAranExperiments
+   ARAranExperiment
    
 .. toctree::
    :maxdepth: 2
