@@ -11,13 +11,14 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About Us" href="aboutus.html" />
+    <link rel="next" title="NG-Core Overview" href="learningmodule4.html" />
     <link rel="prev" title="User Equipment" href="learningmodule2.html" /> 
 </head>
 
@@ -50,12 +51,15 @@
 <li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Technical Details of RAN Systems</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Technical Details of RAN Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#radio-access-networks">Radio Access Networks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#g-ran-overview">5G RAN Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#radio-technologies-utilized-for-5g-ran">Radio Technologies Utilized for 5G RAN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quiz">Quiz</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule4.html">NG-Core Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About Us</span></p>
 <ul>
@@ -96,13 +100,16 @@
 <h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this heading"></a></h2>
 <p>Radio access network, or RAN, is the component of the network that allows for user devices to connect to the core network. Consisting of radio base stations and other network elements, this setup is responsible for wireless communication with user devices/equipment through means of radio waves and is also responsible for managing the radio resources and ensuring that user devices can communicate with the core network. Within a 5G setting, the RAN uses new radio technology and frequency bands to provide high-speed, low-latency, and reliable connectivity for a wide range of devices and applications such as autonomous vehicles, smart agriculture, factory automation, etc.</p>
 </section>
-<section id="id1">
-<h2>Technical Details of RAN Systems<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
-<p>Upon active use or powered on state of the UEs, each base station sets the wireless channel for the device allowing for a connection from the UE to the base station. This connection is referred to as “bearer service” and is used for data transmission
-Base stations sets up a connection between the user’s device and the network’s control center. (Refer to to NG-Core overview for more information on control center). This connection results in service actions such as user authentication and tracking.
-For each active users or UEs, the base station sets up a connection to the network’s user plane component, or the network component responsible for handling the functions such as carrying user data, which is then used for transmitting data. The previous generation had been limited to generally only two mobile core user plane components such as voice and data. However, 5G integration has allowed for multiolple user plane components as part of a network slicing mechanism
-The base station then sends both control and data packets between the user’s device and the network. These packets are sent through different protocols dependingon the type of packets. The base stations will then coordinate with one another in order to verify a smooth handover between connections.
-Again, with the coordination of multiple base stations, data is then transmitted to the user’s device through packets, thus, completing the loop.</p>
+<section id="radio-access-networks">
+<h2>Radio Access Networks<a class="headerlink" href="#radio-access-networks" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Upon active use or powered-on state of the UEs, each base station sets the device’s wireless channel, allowing for a connection from the UE to the base station. This connection is called “bearer service” and is used for data transmission.</p></li>
+<li><p>Base stations set up a connection between the user’s device and the network’s control center. (Refer to NG-Core overview for more information on the control center). This connection results in service actions such as user authentication and tracking.</p></li>
+</ol>
+<p>#. For each active user or UEs, the base station sets up a connection to the network’s user plane component or the network component responsible for handling the functions, such as carrying user data, which is then used for transmitting data.
+The previous generation had been limited to generally only two mobile core user planes components such as voice and data. However, 5G integration has allowed multiple user plane components as part of a network-slicing mechanism.
+#. The base station sends control and data packets between the user’s device and the network. These packets are sent through different protocols depending on the type of packets. The base stations will then coordinate with one another to verify a smooth handover between connections.
+#. Again, with the coordination of multiple base stations, data is transmitted to the user’s device through packets, thus, completing the loop.</p>
 </section>
 <section id="g-ran-overview">
 <h2>5G RAN Overview<a class="headerlink" href="#g-ran-overview" title="Permalink to this heading"></a></h2>
@@ -336,7 +343,7 @@ function submitQuiz() {
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="learningmodule2.html" class="btn btn-neutral float-left" title="User Equipment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="aboutus.html" class="btn btn-neutral float-right" title="About Us" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="learningmodule4.html" class="btn btn-neutral float-right" title="NG-Core Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

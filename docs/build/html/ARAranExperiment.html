@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>“Hello World!” in ARA &mdash; 5Gdocumentation 0.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduction" href="experiments.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            5Gdocumentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html">Starting your learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Learning Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule1.html">Overall Basic 5G Network Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Technical Details of RAN Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule4.html">NG-Core Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutus.html">About Us</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="experiments.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">“Hello World!” in ARA</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">5Gdocumentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">“Hello World!” in ARA</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ARAranExperiment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hello-world-in-ara">
+<span id="ara-hello-world"></span><h1>“Hello World!” in ARA<a class="headerlink" href="#hello-world-in-ara" title="Permalink to this heading"></a></h1>
+<p><strong>Platform:</strong> ARA Computing Server</p>
+<p><strong>Resources Required:</strong> Any server with compute capabilities</p>
+<p><strong>Short Description:</strong> The experiment demonstrates reserving an
+ARA computing resource and launch a container in the reserved node.</p>
+<p><strong>Detailed Description:</strong> The “Hello World!” experiment in ARA is
+intended to provide users the first experience of the infrastructure
+on reserving and accessing a fundamental computing resource. ARA
+provisions the resources using Docker containers and provides access to
+the users for executing their experiments.</p>
+<p><strong>Detailed Steps for the Experiment</strong></p>
+<ol class="arabic simple">
+<li><p>Access the login page and use the credentials to login.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/Login1.png"><img alt="_images/Login1.png" class="align-center" src="_images/Login1.png" style="width: 400px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>To reserve an ARA compute resource, we need to create a lease for
+the resource. Click the <em>Leases</em> option under the <em>Project -&gt;
+Reservations</em> tab in the dashboard.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/Lease_Menu.png"><img alt="_images/Lease_Menu.png" class="align-center" src="_images/Lease_Menu.png" style="width: 1000px;" /></a>
+<ol class="arabic" start="3">
+<li><p>Click on the <em>Create Lease</em> button on the top-right.  The user will
+be redirected to the <em>Create Lease</em> form for specifying the
+reservation specific attributes.</p>
+<ol class="loweralpha">
+<li><p>In the tab <strong>General</strong>, you need to specify the following
+attributes:</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p><em>Lease Name</em>: User-given name for the lease.</p></li>
+<li><p><em>Start Date</em>: The intended date (and time) of start of the lease.</p></li>
+<li><p><em>End Date</em>: The intended time for ending the lease.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/General_Tab.png"><img alt="_images/General_Tab.png" class="align-center" src="_images/General_Tab.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>In the <strong>Resources</strong> tab, we need to select the following
+attributes of the resource.</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p><em>Site</em>: The site at which the resource resides. For compute
+node, we need to select <em>Data Center</em>.</p></li>
+<li><p><em>Resource Type</em>: Among the list of available resource types
+in the drop-down menu, select the <em>Compute</em> type.</p></li>
+<li><p><em>Device Type</em>: From the drop-down box, select <em>Compute Node</em>.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/Resources_Tab.png"><img alt="_images/Resources_Tab.png" class="align-center" src="_images/Resources_Tab.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>The <em>Wireless</em> tab is intended for RAN experiments. For compute
+nodes, we can ignore the fields in this section.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/Wireless_Tab.png"><img alt="_images/Wireless_Tab.png" class="align-center" src="_images/Wireless_Tab.png" style="width: 600px;" /></a>
+<p>After specifying the lease parameters, click the <em>Create Lease</em>
+button at the bottom right to create the lease. It may take
+several minutes to activate the lease.</p>
+<a class="reference internal image-reference" href="_images/Lease_Activation.png"><img alt="_images/Lease_Activation.png" class="align-center" src="_images/Lease_Activation.png" style="width: 1000px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+<p>The created lease will be listed in the page and click on the created
+lease to see the information. A sample screenshot of a lease is
+shown below.</p>
+<a class="reference internal image-reference" href="_images/Lease_Details.png"><img alt="_images/Lease_Details.png" class="align-center" src="_images/Lease_Details.png" style="width: 1000px;" /></a>
+</li>
+</ol>
+<blockquote>
+<div><p>Remember to make a note of the <em>id</em> (starting with 1c9d… in the
+figure above) under the <em>Reservations</em> section since it is required
+during the container creation.</p>
+</div></blockquote>
+<ol class="arabic" start="4">
+<li><p>To create a container, select the <em>Containers</em> tab in the <em>Project
+-&gt; Container</em> menu from the dashboard as shown in the following
+figure.</p>
+<a class="reference internal image-reference" href="_images/Containers_Tab.png"><img alt="_images/Containers_Tab.png" class="align-center" src="_images/Containers_Tab.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="loweralpha">
+<li><p>Click the <em>Create Container</em> button at the top-right of the page.</p>
+<ul>
+<li><p>In the <em>Info</em> tab, provide the general details of the
+container. For example:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Name</em>: Name of the container</p></li>
+<li><p><em>Image</em>: Container image, say <em>ubuntu</em>. Please note that
+a container image built with <em>ssh</em> service is
+recommended for remote access.</p></li>
+<li><p><em>Image Driver</em>: Select the container image source, say
+Docker Hub (i.e., the image will be pulled from the
+Docker Hub repository).</p></li>
+<li><p><em>Command</em>: Provide the command to run when the container
+is launched. For example, to get a command line
+interface, we need to provide <em>bash</em> as the command.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/Container_Info_Tab.png"><img alt="_images/Container_Info_Tab.png" class="align-center" src="_images/Container_Info_Tab.png" style="width: 800px;" /></a>
+</li>
+<li><p>In the Spec tab, you can provide the default values except for
+the <em>Lease ID</em> field, where you need to provide the ID
+matching with the <em>reservation ID</em> noted during the lease
+creation. In this example, the <em>Lease ID</em> should be
+<em>blazar_1c9d…</em>.</p>
+<a class="reference internal image-reference" href="_images/Container_Spec_Tab.png"><img alt="_images/Container_Spec_Tab.png" class="align-center" src="_images/Container_Spec_Tab.png" style="width: 800px;" /></a>
+</li>
+<li><p>In the <em>Networks</em> tab, select the network, which is mandatory
+for any container creation.</p>
+<a class="reference internal image-reference" href="_images/Container_Networks_Tab.png"><img alt="_images/Container_Networks_Tab.png" class="align-center" src="_images/Container_Networks_Tab.png" style="width: 800px;" /></a>
+</li>
+<li><p>Click the <em>Create</em> button for creating the container. The
+status of created container is as follows:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/Container_Running.png"><img alt="_images/Container_Running.png" class="align-center" src="_images/Container_Running.png" style="width: 1000px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Clicking on the container shows the properties of the
+container such as name, host, and IP address.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/Container_Info.png"><img alt="_images/Container_Info.png" class="align-center" src="_images/Container_Info.png" style="width: 1000px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+<blockquote>
+<div><ul>
+<li><p>The <em>Console</em> tab on the top may direct you to the shell of
+the container where you can run the experiment. Please note
+that the console may not be available in some browsers due to
+plugin restrictions. In such cases, the container can be
+accessed using floating point IPs.</p>
+<a class="reference internal image-reference" href="_images/Container_Shell.png"><img alt="_images/Container_Shell.png" class="align-center" src="_images/Container_Shell.png" style="width: 1000px;" /></a>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</li>
+<li><p>When the container is in the <em>running</em> state, we can assign
+floating IP address to it. Select <em>Floating IP</em> tab of the <em>Project
+-&gt; Network</em> menu from the dashboard and click on the <em>Allocate IP
+to the Project</em> button.</p>
+<a class="reference internal image-reference" href="_images/Allocate_IP_to_Project.png"><img alt="_images/Allocate_IP_to_Project.png" class="align-center" src="_images/Allocate_IP_to_Project.png" style="width: 1000px;" /></a>
+<p>In the sub-window as shown below, click and click the <em>Allocate IP</em>
+button with default settings.</p>
+<a class="reference internal image-reference" href="_images/Manage_Floating_IP.png"><img alt="_images/Manage_Floating_IP.png" class="align-center" src="_images/Manage_Floating_IP.png" style="width: 600px;" /></a>
+<p>The allocation reserves an IP for the project which can be assigned
+to the container for accessing it from outside. For associating the
+floating IP to the container, click the <em>Associate</em> button in the
+following figure.</p>
+<a class="reference internal image-reference" href="_images/Associate_Floating_IP.png"><img alt="_images/Associate_Floating_IP.png" class="align-center" src="_images/Associate_Floating_IP.png" style="width: 1000px;" /></a>
+<p>In the sub-window as shown below, select the <em>Port to be
+associated</em> option as the IP address of your container available
+from the container information.</p>
+<a class="reference internal image-reference" href="_images/Associate_Floating_IP_1.png"><img alt="_images/Associate_Floating_IP_1.png" class="align-center" src="_images/Associate_Floating_IP_1.png" style="width: 600px;" /></a>
+</li>
+<li><p>When the association is active, we can use the IP to ssh into the
+controller from the ARA-jumpbox.</p>
+<ul>
+<li><p>First login to the ARA Jumpbox using the username given. For
+example, for the username <em>johndoe</em>, you can login to the jumpbox
+using the following command from your computer terminal.</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>ssh <a class="reference external" href="mailto:johndoe&#37;&#52;&#48;jbox&#46;arawireless&#46;org">johndoe<span>&#64;</span>jbox<span>&#46;</span>arawireless<span>&#46;</span>org</a></p>
+</li>
+<li><p>Next login to the container with the floating point IP
+assigned. For the example, you can use the following command to
+login to the container.</p>
+<p><code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">root&#64;10.189.9.65</span></code></p>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="experiments.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Zachary Miller, Adam Kruger, Danny Cao, Ethan Gabriel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

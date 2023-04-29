@@ -31,6 +31,13 @@ If you're new, be sure to look at the :ref:`beginner<settingup>` page!
 
 .. toctree::
    :maxdepth: 2
+   :caption: ARA Technical Overview
+
+   learningmodule7
+
+
+.. toctree::
+   :maxdepth: 2
    :caption: About Us
 
    aboutus
@@ -40,3 +47,4 @@ If you're new, be sure to look at the :ref:`beginner<settingup>` page!
    :caption: Experiments
 
    experiments
+   ARAranExperiments

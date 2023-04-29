@@ -11,7 +11,7 @@ When looking at the basic overall 5G network structure, at its core, it consists
 
 User Equipment
 --------------
-Also referred to as UE's, these are the end-user devices typically used to establish a connection or access the network. They serve the role of enabling users to access high-speed wireless communication as well as other advanced applications and services. Some common examples of UE's include laptops, smartphones, desktop computers, or any device that can connect to the network through wireless communication technologies such as Wifi and cellular data. Refer to page: "User Equipment" for more information.
+Also referred to as UE's, these are the end-user devices typically used to establish a connection or access the network. They serve the role of enabling users to access high-speed wireless communication as well as other advanced applications and services. Some common examples of UE's include laptops, smartphones, desktop computers, or any device that can connect to the network through wireless communication technologies such as Wi-fi and cellular data. Refer to page: "User Equipment" for more information.
 
 .. figure:: /images/UserequipmentM1.png
    :alt: 5Gdocumentation

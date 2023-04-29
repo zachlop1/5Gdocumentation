@@ -11,6 +11,7 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
@@ -55,6 +56,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Technical Details of RAN Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule4.html">NG-Core Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About Us</span></p>
 <ul>
@@ -98,7 +103,7 @@ When looking at the basic overall 5G network structure, at its core, it consists
 </section>
 <section id="user-equipment">
 <h2>User Equipment<a class="headerlink" href="#user-equipment" title="Permalink to this heading"></a></h2>
-<p>Also referred to as UE’s, these are the end-user devices typically used to establish a connection or access the network. They serve the role of enabling users to access high-speed wireless communication as well as other advanced applications and services. Some common examples of UE’s include laptops, smartphones, desktop computers, or any device that can connect to the network through wireless communication technologies such as Wifi and cellular data. Refer to page: “User Equipment” for more information.</p>
+<p>Also referred to as UE’s, these are the end-user devices typically used to establish a connection or access the network. They serve the role of enabling users to access high-speed wireless communication as well as other advanced applications and services. Some common examples of UE’s include laptops, smartphones, desktop computers, or any device that can connect to the network through wireless communication technologies such as Wi-fi and cellular data. Refer to page: “User Equipment” for more information.</p>
 <figure class="align-center" id="id1">
 <img alt="5Gdocumentation" src="_images/UserequipmentM1.png" />
 <figcaption>
@@ -257,7 +262,7 @@ When looking at the basic overall 5G network structure, at its core, it consists
 			</div>
 
 			<div class="question">
-				The functions that Radio Access Networks perform are <br /><br />(i) radio trasmission and reception <br />(ii) routing data between different networks <br />
+				The functions that Radio Access Networks perform are <br /><br />(i) radio transmission and reception <br />(ii) routing data between different networks <br />
 				(iii) signal processing
 			</div>
 			<div class="answer">
@@ -286,7 +291,7 @@ When looking at the basic overall 5G network structure, at its core, it consists
 			</div>
 
 			<div class="question">
-				Core Networks tranfer data between different Radio Access Network nodes.
+				Core Networks transfer data between different Radio Access Network nodes.
 			</div>
 			<div class="answer">
 				<label>
@@ -309,7 +314,7 @@ function submitQuiz() {
 			let q1 = document.querySelector('input[name="q1"]:checked').value;
 			let q2 = document.querySelector('input[name="q2"]:checked').value;
 			let q3 = document.querySelector('input[name="q3"]:checked').value;
-			let q4 = document.querySelector('input[name="q3"]:checked').value;
+			let q4 = document.querySelector('input[name="q4"]:checked').value;
 
 			let correctAnswers = ["b", "d", "a", "a"];
 			let score = 0;

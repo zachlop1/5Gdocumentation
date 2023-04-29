@@ -21,20 +21,14 @@ Some advanced signal-processing methods commonly used in 5G UEs include:
 
 5G UEs are designed to provide end users with a reliable, faster, and more responsive wireless experience compared to the previous generation and their predecessors.
 
-
-Radio Access Network
---------------------
-The radio access network, or RAN, is the component that links the user equipment to the core network (a component that is mentioned below). It consists of a network of base stations, or radio access nodes, communicating with the aforementioned user equipment using radio frequencies. UE’s can be provided wireless connectivity by transmitting and receiving radio signals through the radio access network. Some of the functions performed by the RAN include radio transmission and reception, signal processing, resource management, and security. Refer to page: “Radio Access Network” for more information
-
-
-
-Core Network
--------------
-The core network or mobile core is a critical component of a 5G network in the sense that this component is responsible for connecting the radio access networks to other external networks, such as the internet, and provides connectivity between different RAN nodes. The core network is also responsible for providing services such as authentication, routing of user traffic, and authorization.
-
+Instances and Applications of 5G User Equipment
+-----------------------------------------------
+When comparing user equipment designed around 5G to the previous generations, such as 4G, it’s quite clear that 5G user equipment has the edge according to some of the following factors:
+- Speed: User equipment and devices can likely reach a transfer speed of up to 20GB per second compared to 4G’s peak of 1GB per second.
+- Latency: The response time or latency rate of 5G averages one millisecond. Compared to the previous generation, an average of 200 milliseconds.
+- Capacity: 5G user equipment is designed to handle much more data that can be transmitted over a network. With the number of smart devices linked to homes, it may be a wiser choice to use 5G over 4G.
 
 Quiz
-------------
-
+----
 .. raw:: html
     :file: Module2quiz.html

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NG-Core Overview &mdash; 5Gdocumentation 0.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Other Equipment Used to Deploy 5G Networks" href="learningmodule5.html" />
+    <link rel="prev" title="Technical Details of RAN Systems" href="learningmodule3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            5Gdocumentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html">Starting your learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Learning Modules</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="learningmodule1.html">Overall Basic 5G Network Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Technical Details of RAN Systems</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">NG-Core Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mobile-core-basics">Mobile Core Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#authentication-ip-connectivity-and-bill-tracking">Authentication, IP Connectivity, and Bill Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#radio-technologies-utilized-for-5g-ran">Radio Technologies Utilized for 5G RAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quiz">Quiz</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutus.html">About Us</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="experiments.html">Introduction</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">5Gdocumentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">NG-Core Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/learningmodule4.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ng-core-overview">
+<h1>NG-Core Overview<a class="headerlink" href="#ng-core-overview" title="Permalink to this heading"></a></h1>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this heading"></a></h2>
+<p>The next-Generation Core network, or NG-Core, is an important technology for 5G networks. The NG-Core is responsible for managing and routing data traffic. Some of its responsibilities include authentication, IP connectivity, and bill tracking. Another feature includes Network Function Virtualization, or NFV, which improves efficiency. Another name for the NG-Core technology is a 5G Mobile Core.</p>
+</section>
+<section id="mobile-core-basics">
+<h2>Mobile Core Basics<a class="headerlink" href="#mobile-core-basics" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p>The “User Plane” (UP or UPF) forwards traffic between RAN and the Internet</p></li>
+<li><p>UPF is responsible for policy enforcement, QoS policing, traffic usage statistics, and lawful intercept</p></li>
+<li><p>The majority of the functionality comes from these two:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>AMF (Core Access and Mobility Management Function) - responsible for handling connection and mobility management tasks</p></li>
+<li><p>SMF (Session Management Function) - manages each UE session and takes care of things such as IP address allocation.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Many smaller features need to be shown in the figure, as 3GPP defines a large array of control-related elements that serve to complete smaller tasks.</p></li>
+</ul>
+</section>
+<section id="authentication-ip-connectivity-and-bill-tracking">
+<h2>Authentication, IP Connectivity, and Bill Tracking<a class="headerlink" href="#authentication-ip-connectivity-and-bill-tracking" title="Permalink to this heading"></a></h2>
+<p>Base stations make up a large part of the radio access network (RAN) and play an essential role in communication. They are responsible for many tasks, including transmitting and receiving signals with user equipment. Base stations are also in charge of managing resources; this can include managing bandwidth, power, and time slots in accordance with user equipment. It also performs scheduling and interference management to ensure that users get the best possible connection. Base stations are also in charge of signal processing. This means that signals sent from the UE to the stations are decoded to ensure they are in a form suitable for information processing. Likewise, they are also responsible for encoding signals before transmitting them to UE. This adds a measure of security when transmitting data using 5G.</p>
+</section>
+<section id="radio-technologies-utilized-for-5g-ran">
+<h2>Radio Technologies Utilized for 5G RAN<a class="headerlink" href="#radio-technologies-utilized-for-5g-ran" title="Permalink to this heading"></a></h2>
+<p>One of the technologies implemented in 5G technology is the use of millimeter waves. These waves are used to provide a high-speed, low latency connection especially when in urban areas where a high number of users are present. These signals don’t come without their limitations however. One limitation is the limited range that comes with these signals, meaning they are easily blocked by buildings and trees. These signals also have limited penetration, meaning on top of their limited range they also have hard time penetrating solid objects. This limits the use of this type of signal indoors. These signals are also susceptible to weather, such as rain, fog, and snow.
+One of the ways to overcome this range of limitations is to use beamforming technology (previously mentioned under the 5G User Equipment module), which directs the signals to the UE. Beam</p>
+</section>
+<section id="quiz">
+<h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading"></a></h2>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module 1 Quiz</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 20px;
+			padding: 20px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.quiz {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px 1px #ccc;
+			margin: 20px;
+			padding: 20px;
+			width: 500px;
+		}
+
+		.question {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.answer {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 10px;
+		}
+
+		.answer label {
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
+
+		.answer input[type="radio"] {
+			margin-right: 10px;
+		}
+
+		.submit-button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+
+		.submit-button:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form class="quiz" onsubmit="return false;">
+
+			<p>incomplete</p>
+			<button class="submit-button" onclick="submitQuiz()">Submit</button>
+		</form>
+	</div>
+	<script>
+
+function submitQuiz() {
+			let q1 = document.querySelector('input[name="q1"]:checked').value;
+			let q2 = document.querySelector('input[name="q2"]:checked').value;
+			let q3 = document.querySelector('input[name="q3"]:checked').value;
+
+			let correctAnswers = ["b", "a", "b"];
+			let score = 0;
+			if (q1 === correctAnswers[0]) {
+				score++;
+			}
+			if (q2 === correctAnswers[1]) {
+				score++;
+			}
+			if (q3 === correctAnswers[2]) {
+				score++;
+			}
+			alert(`You scored ${score} out of ${correctAnswers.length}`);
+		}
+	</script>
+</body>
+</html>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="learningmodule3.html" class="btn btn-neutral float-left" title="Technical Details of RAN Systems" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="learningmodule5.html" class="btn btn-neutral float-right" title="Other Equipment Used to Deploy 5G Networks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Zachary Miller, Adam Kruger, Danny Cao, Ethan Gabriel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

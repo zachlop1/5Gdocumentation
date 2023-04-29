@@ -11,13 +11,14 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About Us" href="aboutus.html" />
+    <link rel="next" title="Technical Details of RAN Systems" href="learningmodule3.html" />
     <link rel="prev" title="Overall Basic 5G Network Structure" href="learningmodule1.html" /> 
 </head>
 
@@ -50,11 +51,14 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">User Equipment</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#key-features-of-5g-user-equipment">Key Features of 5G User Equipment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#radio-access-network">Radio Access Network</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#core-network">Core Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instances-and-applications-of-5g-user-equipment">Instances and Applications of 5G User Equipment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quiz">Quiz</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Technical Details of RAN Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule4.html">NG-Core Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About Us</span></p>
 <ul>
@@ -108,20 +112,19 @@
 - Modulation.</p>
 <p>5G UEs are designed to provide end users with a reliable, faster, and more responsive wireless experience compared to the previous generation and their predecessors.</p>
 </section>
-<section id="radio-access-network">
-<h2>Radio Access Network<a class="headerlink" href="#radio-access-network" title="Permalink to this heading"></a></h2>
-<p>The radio access network, or RAN, is the component that links the user equipment to the core network (a component that is mentioned below). It consists of a network of base stations, or radio access nodes, communicating with the aforementioned user equipment using radio frequencies. UE’s can be provided wireless connectivity by transmitting and receiving radio signals through the radio access network. Some of the functions performed by the RAN include radio transmission and reception, signal processing, resource management, and security. Refer to page: “Radio Access Network” for more information</p>
-</section>
-<section id="core-network">
-<h2>Core Network<a class="headerlink" href="#core-network" title="Permalink to this heading"></a></h2>
-<p>The core network or mobile core is a critical component of a 5G network in the sense that this component is responsible for connecting the radio access networks to other external networks, such as the internet, and provides connectivity between different RAN nodes. The core network is also responsible for providing services such as authentication, routing of user traffic, and authorization.</p>
+<section id="instances-and-applications-of-5g-user-equipment">
+<h2>Instances and Applications of 5G User Equipment<a class="headerlink" href="#instances-and-applications-of-5g-user-equipment" title="Permalink to this heading"></a></h2>
+<p>When comparing user equipment designed around 5G to the previous generations, such as 4G, it’s quite clear that 5G user equipment has the edge according to some of the following factors:
+- Speed: User equipment and devices can likely reach a transfer speed of up to 20GB per second compared to 4G’s peak of 1GB per second.
+- Latency: The response time or latency rate of 5G averages one millisecond. Compared to the previous generation, an average of 200 milliseconds.
+- Capacity: 5G user equipment is designed to handle much more data that can be transmitted over a network. With the number of smart devices linked to homes, it may be a wiser choice to use 5G over 4G.</p>
 </section>
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Permalink to this heading"></a></h2>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Module 3 Quiz</title>
+	<title>Module 1 Quiz</title>
 	<style>
 		body {
 			background-color: #f1f1f1;
@@ -200,105 +203,104 @@
 	<div class="container">
 		<form class="quiz" onsubmit="return false;">
 
-			<div class="question">What does RAN stand for? (Review Question)</div>
+			<div class="question">Which frequency bands do 5G UEs connect to in a multi-band support?</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q1" value="a" required>
-					Radio Antenna Network
+					Sub-6 GHz bands
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q1" value="b">
-					Radio Access Network
+					mmWave bands
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q1" value="c">
-					Radio Authentication Network
+					Both A and B
 				</label>
 			</div>
 
-			<div class="question">What is the primary responsibility of the RAN?</div>
+			<div class="question">What are some advanced signal-processing methods commonly used in 5G UEs?</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q2" value="a" required>
-					Connecting user devices to the core network
+					Error Correction
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q2" value="b">
-					Providing internet service to homes and businesses
+					Channel Coding
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q2" value="c">
-					Managing the backend servers for network communication
-				</label>
-			</div>
-			<div class="answer">
-				<label>
-					<input type="radio" name="q2" value="d">
-					Providing satellite connectivity for remote areas
+					Modulation
 				</label>
 			</div>
 
-			<div class="question">
-				What technology is utilized by 5G RAN to provide high-speed, low-latency connectivity in urban areas?
+			<div class="answer">
+				<label>
+					<input type="radio" name="q2" value="d">
+					All of the above
+				</label>
 			</div>
+
+			<div class="question">What gives 5G user equipment an edge over previous generations such as 4G?</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q3" value="a" required>
-					Radio waves
+					Faster transfer speed
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q3" value="b">
-					Infrared waves
+					Higher letency rate
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q3" value="c">
-					Millimeter Waves
+					Can handle less data than 4G
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q3" value="d">
-					Microwave waves
+					None of the above
 				</label>
 			</div>
 
 			<div class="question">
-				What is the primary benefit of using Massive MIMO antennas in 5G RAN?
+				What is the average latency rate of 5G UEs?
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q4" value="a" required>
-					Increased network complexity
+					20ms
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q4" value="b">
-					Reduced signal processing algorithms
+					200ms
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q4" value="c">
-					Improved network capacity and overall performance
+					1ms
 				</label>
 			</div>
 			<div class="answer">
 				<label>
 					<input type="radio" name="q4" value="d">
-					Decreased latency
+					10ms
 				</label>
 			</div>
 			<button class="submit-button" onclick="submitQuiz()">Submit</button>
@@ -312,7 +314,7 @@ function submitQuiz() {
 			let q3 = document.querySelector('input[name="q3"]:checked').value;
 			let q4 = document.querySelector('input[name="q4"]:checked').value;
 
-			let correctAnswers = ["b", "a", "c", "c"];
+			let correctAnswers = ["c", "d", "a", "c"];
 			let score = 0;
 			if (q1 === correctAnswers[0]) {
 				score++;
@@ -339,7 +341,7 @@ function submitQuiz() {
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="learningmodule1.html" class="btn btn-neutral float-left" title="Overall Basic 5G Network Structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="aboutus.html" class="btn btn-neutral float-right" title="About Us" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="learningmodule3.html" class="btn btn-neutral float-right" title="Technical Details of RAN Systems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
