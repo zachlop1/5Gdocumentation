@@ -10,6 +10,8 @@ Radio access network, or RAN, is the component of the network that allows for us
    :width: 400
    :align: center
 
+
+
 Radio Access Networks
 --------------------------------
 * Upon active use or powered-on state of the UEs, each base station sets the device's wireless channel, allowing for a connection from the UE to the base station. This connection is called “bearer service” and is used for data transmission.
