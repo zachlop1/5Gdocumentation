@@ -32,7 +32,7 @@ Authentication
 * AKA provides procedures for mutual authentication of UE and Network
 * Protects against identity theft and fraud
 
-IP Connectivity: 
+IP Connectivity:
 * Mobile core capable of using different protocols to assign IP, including:
 
     * Internet Protocol (IP)
