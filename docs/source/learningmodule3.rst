@@ -7,10 +7,7 @@ Radio access network, or RAN, is the component of the network that allows for us
 
 .. figure:: /images/module3abstract.png
    :alt: 5Gdocumentation
-   :width: 400
    :align: center
-
-
 
 Radio Access Networks
 --------------------------------

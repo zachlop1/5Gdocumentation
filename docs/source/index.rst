@@ -34,7 +34,7 @@ If you're new, be sure to look at the :ref:`beginner<settingup>` page!
    :maxdepth: 2
    :caption: ARA Technical Overview
 
-   learningmodule7
+   ARAoverview
 
 
 .. toctree::
