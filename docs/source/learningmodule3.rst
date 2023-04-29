@@ -1,16 +1,15 @@
-Radio Access Networks
+Technical Details of RAN Systems
 =====================
 
 Abstract
 ---------
 Radio access network, or RAN, is the component of the network that allows for user devices to connect to the core network. Consisting of radio base stations and other network elements, this setup is responsible for wireless communication with user devices/equipment through means of radio waves and is also responsible for managing the radio resources and ensuring that user devices can communicate with the core network. Within a 5G setting, the RAN uses new radio technology and frequency bands to provide high-speed, low-latency, and reliable connectivity for a wide range of devices and applications such as autonomous vehicles, smart agriculture, factory automation, etc.
 
-<<<<<<< HEAD
 .. figure:: /images/module3abstract.png
    :alt: 5Gdocumentation
    :align: center
 
-Technical Details of RAN Systems
+Radio Access Networks
 --------------------------------
 * Upon active use or powered-on state of the UEs, each base station sets the device's wireless channel, allowing for a connection from the UE to the base station. This connection is called “bearer service” and is used for data transmission.
 * Base stations set up a connection between the user’s device and the network’s control center. (Refer to NG-Core overview for more information on the control center). This connection results in service actions such as user authentication and tracking.
@@ -23,16 +22,6 @@ Technical Details of RAN Systems
    :align: center
 
    *Skylark Base Station*
-=======
-Radio Access Networks
-----------------------------------
-#. Upon active use or powered-on state of the UEs, each base station sets the device's wireless channel, allowing for a connection from the UE to the base station. This connection is called “bearer service” and is used for data transmission.
-#. Base stations set up a connection between the user’s device and the network’s control center. (Refer to NG-Core overview for more information on the control center). This connection results in service actions such as user authentication and tracking.
-#. For each active user or UEs, the base station sets up a connection to the network’s user plane component or the network component responsible for handling the functions, such as carrying user data, which is then used for transmitting data.
-The previous generation had been limited to generally only two mobile core user planes components such as voice and data. However, 5G integration has allowed multiple user plane components as part of a network-slicing mechanism.
-#. The base station sends control and data packets between the user’s device and the network. These packets are sent through different protocols depending on the type of packets. The base stations will then coordinate with one another to verify a smooth handover between connections.
-#. Again, with the coordination of multiple base stations, data is transmitted to the user’s device through packets, thus, completing the loop.
->>>>>>> 50ad50dfa58aaaf78c27e19c937b030eb83e8388
 
 5G RAN Overview
 -----------------
