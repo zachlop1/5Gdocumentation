@@ -27,10 +27,6 @@ Instances and Applications of 5G User Equipment
 -----------------------------------------------
 When comparing user equipment designed around 5G to the previous generations, such as 4G, it’s quite clear that 5G user equipment has the edge according to some of the following factors:
 
-.. figure:: /images/4g5g.jpg
-   :alt: 5Gdocumentation
-   :align: center
-
 * Speed: User equipment and devices can likely reach a transfer speed of up to 20GB per second compared to 4G’s peak of 1GB per second.
 * Latency: The response time or latency rate of 5G averages one millisecond. Compared to the previous generation, an average of 200 milliseconds.
 * Capacity: 5G user equipment is designed to handle much more data that can be transmitted over a network. With the number of smart devices linked to homes, it may be a wiser choice to use 5G over 4G.
