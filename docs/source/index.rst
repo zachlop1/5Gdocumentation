@@ -28,6 +28,7 @@ If you're new, be sure to look at the :ref:`beginner<settingup>` page!
    learningmodule4
    learningmodule5
    learningmodule6
+   learningmodule7
 
 .. toctree::
    :maxdepth: 2
@@ -47,4 +48,4 @@ If you're new, be sure to look at the :ref:`beginner<settingup>` page!
    :caption: Experiments
 
    experiments
-   ARAranExperiment
+   ARAranExperiments
