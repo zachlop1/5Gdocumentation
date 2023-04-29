@@ -15,7 +15,7 @@ In addition to these technologies, several types of equipment are also used to s
 .. figure:: /images/smallcell.png
    :alt: 5Gdocumentation
    :align: center
-*This picture depicts small cells*
+   *This picture depicts small cells*
 
 
 
@@ -23,7 +23,7 @@ In addition to these technologies, several types of equipment are also used to s
 .. figure:: /images/antenna.png
    :alt: 5Gdocumentation
    :align: center
-*This picture depicts antennas used for 5G**
+   *This picture depicts antennas used for 5G*
 
 
   Much more other technology and equipment are used to support 5G networks in order to improve the system and network infrastructure. Some of these have been around since previous network generations, and some of which are cutting edge and are only applicable to current generation networks. They all still serve the primary purpose of delivering a better user experience through increased speeds and better coverage, allowing for more global connectivity. 
