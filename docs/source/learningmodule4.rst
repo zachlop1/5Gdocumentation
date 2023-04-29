@@ -21,6 +21,12 @@ Authentication, IP Connectivity, and Bill Tracking
 
 Base stations make up a large part of the radio access network (RAN) and play an essential role in communication. They are responsible for many tasks, including transmitting and receiving signals with user equipment. Base stations are also in charge of managing resources; this can include managing bandwidth, power, and time slots in accordance with user equipment. It also performs scheduling and interference management to ensure that users get the best possible connection. Base stations are also in charge of signal processing. This means that signals sent from the UE to the stations are decoded to ensure they are in a form suitable for information processing. Likewise, they are also responsible for encoding signals before transmitting them to UE. This adds a measure of security when transmitting data using 5G.
 
+.. figure:: /images/5g-mobile-phone-mast.png
+   :alt: 5Gdocumentation
+   :align: center
+
+   *5G Base Station*
+
 Radio Technologies Utilized for 5G RAN
 --------------------------------------
 
