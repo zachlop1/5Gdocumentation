@@ -40,6 +40,7 @@ IP Connectivity:
 * Ensures device with IP assigned can access the internet
 
 Bill Tracking
+
 * Various protocols are in place that tracks network usage and bill users. 
 * Protocols include:
 	* Diameter Protocol - used in LTE and IMS network-side functions. Collects user credentials and sends an access request to the Diameter node, which analyzes information and verifies the authenticity of the user
