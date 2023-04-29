@@ -19,19 +19,39 @@ Mobile Core Basics
 Authentication, IP Connectivity, and Bill Tracking
 --------------------------------------------------
 
-Base stations make up a large part of the radio access network (RAN) and play an essential role in communication. They are responsible for many tasks, including transmitting and receiving signals with user equipment. Base stations are also in charge of managing resources; this can include managing bandwidth, power, and time slots in accordance with user equipment. It also performs scheduling and interference management to ensure that users get the best possible connection. Base stations are also in charge of signal processing. This means that signals sent from the UE to the stations are decoded to ensure they are in a form suitable for information processing. Likewise, they are also responsible for encoding signals before transmitting them to UE. This adds a measure of security when transmitting data using 5G.
+Authentication
 
-.. figure:: /images/5g-mobile-phone-mast.png
-   :alt: 5Gdocumentation
-   :align: center
+* Mobile Core typically uses AKA or Authentication and Key Agreement to authenticate users. A diagram of how AKA works are shown below:
 
-   *5G Base Station*
+INSERT IMAGE HERE
 
-Radio Technologies Utilized for 5G RAN
+* AKA provides procedures for mutual authentication of UE and Network
+* Protects against identity theft and fraud
+
+IP Connectivity:
+* Mobile core capable of using different protocols to assign IP, including:
+	*Internet Protocol (IP)
+	*Dynamic Host Configuration Protocol (DHCP)
+	*Border Gateway Protocol (BGP)
+* Ensures the IP address assigned to UE is unique
+* Ensures device with IP assigned can access the internet
+
+Bill Tracking
+* Various protocols are in place that tracks network usage and bill users. 
+* Protocols include:
+	* Diameter Protocol - used in LTE and IMS network-side functions. Collects user credentials and sends an access request to the Diameter node, which analyzes information and verifies the authenticity of the user
+	* Charging Data Record (CDR) - a formatted collection of information about a chargeable telecommunication event, and these events can be something like making a phone call or using the internet.
+
+5G Technologies Utilized for NG-CORE
 --------------------------------------
+Network Function Virtualization, or NFV, is a technology that allows for the virtualization of network functions. This can include processes such as routing, switching, and firewalls. Instead of these processes relying on hardware appliances, they use software-based implementations that run on server hardware. This allows the functions to be more flexible in a real-use environment. 
 
-One of the technologies implemented in 5G technology is the use of millimeter waves. These waves are used to provide a high-speed, low latency connection especially when in urban areas where a high number of users are present. These signals don’t come without their limitations however. One limitation is the limited range that comes with these signals, meaning they are easily blocked by buildings and trees. These signals also have limited penetration, meaning on top of their limited range they also have hard time penetrating solid objects. This limits the use of this type of signal indoors. These signals are also susceptible to weather, such as rain, fog, and snow.
-One of the ways to overcome this range of limitations is to use beamforming technology (previously mentioned under the 5G User Equipment module), which directs the signals to the UE. Beam
+NFV is a concept that considers the constant changing of what hardware is new and fast and understands that physical hardware can easily become obsolete. Software-based processes can receive updates and changes to keep network services running smoothly. 
+
+NFV works mainly in three parts: Virtualization creates multiple virtual instances of network functions on a single server. SDN (Software-Defined Networking) is also used to automate the configuration and management of our virtualized network functions. Cloud computing is used along with this to provide necessary resources (storage, computing power, networking resources)
+
+
+
 
 Quiz
 ----
