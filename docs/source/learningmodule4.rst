@@ -33,9 +33,9 @@ Authentication
 IP Connectivity: 
 
 * Mobile core capable of using different protocols to assign IP, including: 
-	* Internet Protocol (IP)
-	* Dynamic Host Configuration Protocol (DHCP)
-	* Border Gateway Protocol (BGP)
+    * Internet Protocol (IP)
+    * Dynamic Host Configuration Protocol (DHCP)
+    * Border Gateway Protocol (BGP)
 * Ensures the IP address assigned to UE is unique
 * Ensures device with IP assigned can access the internet
 
@@ -43,7 +43,8 @@ Bill Tracking
 
 * Various protocols are in place that tracks network usage and bill users. 
 
-* Protocols include: 
+* Protocols include:
+
 	* Diameter Protocol - used in LTE and IMS network-side functions. Collects user credentials and sends an access request to the Diameter node, which analyzes information and verifies the authenticity of the user
 	* Charging Data Record (CDR) - a formatted collection of information about a chargeable telecommunication event, and these events can be something like making a phone call or using the internet.
 
