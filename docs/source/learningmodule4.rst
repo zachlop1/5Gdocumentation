@@ -33,11 +33,12 @@ Authentication
 * Protects against identity theft and fraud
 
 IP Connectivity: 
+* Mobile core capable of using different protocols to assign IP, including:
 
-* Mobile core capable of using different protocols to assign IP, including: 
     * Internet Protocol (IP)
     * Dynamic Host Configuration Protocol (DHCP)
     * Border Gateway Protocol (BGP)
+    
 * Ensures the IP address assigned to UE is unique
 * Ensures device with IP assigned can access the internet
 
