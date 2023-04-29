@@ -12,11 +12,10 @@ Other technologies that support 5G networks include network function virtualizat
 
 In addition to these technologies, several types of equipment are also used to support the 5G network. For rural or poor coverage areas, deploying small cells, which are low-powered cellular base stations, may benefit users as these small cells are used to offload traffic from the macro cellular network.  In the case of urban areas or areas with poor signal quality, distributed antenna systems or DAS may be utilized to improve signal quality as the signal from the network is distributed through a network of small antennas located throughout the coverage area rather than relying on a singular, centralized antenna.
 
-.. figure:: /images/smallcell.jpg
+.. figure:: /images/smallcell.png
    :alt: 5Gdocumentation
    :align: center
 
-   *This picture depicts small cells*
 
   Much more other technology and equipment are used to support 5G networks in order to improve the system and network infrastructure. Some of these have been around since previous network generations, and some of which are cutting edge and are only applicable to current generation networks. They all still serve the primary purpose of delivering a better user experience through increased speeds and better coverage, allowing for more global connectivity. 
 
