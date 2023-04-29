@@ -18,6 +18,9 @@ In addition to these technologies, several types of equipment are also used to s
 
    *This picture depicts small cells*
 
+
+
+
 .. figure:: /images/antenna.png
    :alt: 5Gdocumentation
    :align: center
