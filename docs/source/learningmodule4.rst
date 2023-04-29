@@ -25,7 +25,7 @@ Authentication
 * Mobile Core typically uses AKA or Authentication and Key Agreement to authenticate users. A diagram of how AKA works are shown below: 
 
 
-.. figure:: /images/5g-mobile-phone-mast.png
+.. figure:: /images/Akadiagram.png
    :alt: 5Gdocumentation
    :align: center
 
