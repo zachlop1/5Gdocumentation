@@ -8,6 +8,7 @@ This section will teach you *how* to navigate our website and how you can get st
 Learning Modules
 ----------------
 Under *Learning Modules*, you will find valuable information regarding 5G infrastructure. Each learning module is intended to teach you a different aspect of 5G. We suggest you go in order, as the information and quizzes we provide after each module require previous module knowledge. You will learn about: 
+
 * Overall Basic 5G Network Structure
 * User Equipment
 * Technical Details of RAN Systems
