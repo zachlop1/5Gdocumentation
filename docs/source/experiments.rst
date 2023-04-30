@@ -1,5 +1,5 @@
 Get to Know Powder
-============
+==================
 
 Pinging a network is the act of essentially sending a relatively small packet of information (data) from one device to another. In our case, we’ll be pinging from your computer to a 5G network created and initialized on another device created by the Powder web application. Pinging allows us to test the speed, reliability, and overall status of the network connection between the connected devices. It also allows us to:
 
