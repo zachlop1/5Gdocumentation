@@ -203,7 +203,7 @@ the users for executing their experiments.
      example, for the username *johndoe*, you can login to the jumpbox
      using the following command from your computer terminal.
 
-     ``ssh johndoe@jbox.arawireless.org
+     ``ssh johndoe@jbox.arawireless.org``
 
    * Next login to the container with the floating point IP
      assigned. For the example, you can use the following command to
