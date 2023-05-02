@@ -36,6 +36,7 @@ Detailed Steps for the Experiment:
    :align: center
 
 **Workspace instructions:**
+
 #. Drag two “Xen VM” nodes onto the dashboard.
 #. Click into each node, and name one of them “Node1” and one as “Node2” respectively. These of course don’t have to be named as such.
 #. Make sure each node has the Node Type: “emulab-xen”
