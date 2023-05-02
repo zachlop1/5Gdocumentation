@@ -1,4 +1,4 @@
-“Virtual Network Topology” using GENI
+Virtual Network Topology using GENI
 =====================================
 Platform: GENI 
 Resources Required: Account with GENI, Terminal capable of SSH
@@ -11,21 +11,29 @@ Detailed Steps for the Experiment:
 
 * Open a web browser and navigate to portal.geni.net
 
-//image
+.. figure:: /images/geni1.png
+   :alt: 5Gdocumentation
+   :align: center
 
 * Login to the website (This may require login through an institution with access to GENI)
 
-* On this page hit “+ New slice”. On the following screen fill out your slice name and slice description with relevant information.
+* On this page hit **New slice**. On the following screen fill out your slice name and slice description with relevant information.
 
-//image
+.. figure:: /images/geni2.png
+   :alt: 5Gdocumentation
+   :align: center
 
-* Once your slice has been created you will be navigated to the resources page for your slice. Now we will populate the slice with our virtual network topology. Go ahead and click “Add Resources” to get started.\
+* Once your slice has been created you will be navigated to the resources page for your slice. Now we will populate the slice with our virtual network topology. Go ahead and click **Add Resources** to get started.
 
-//image
+.. figure:: /images/geni3.png
+   :alt: 5Gdocumentation
+   :align: center
 
 * After this you should see this workspace open up, which we will use to create our experiment:
 
-//image
+.. figure:: /images/geni4.png
+   :alt: 5Gdocumentation
+   :align: center
 
 **Workspace instructions:**
 #. Drag two “Xen VM” nodes onto the dashboard.
