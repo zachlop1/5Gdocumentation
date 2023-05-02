@@ -23,11 +23,13 @@ Detailed Steps for the Experiment:
    :alt: 5Gdocumentation
    :align: center
 
+
 * Once your slice has been created you will be navigated to the resources page for your slice. Now we will populate the slice with our virtual network topology. Go ahead and click **Add Resources** to get started.
 
 .. figure:: /images/geni3.png
    :alt: 5Gdocumentation
    :align: center
+
 
 * After this you should see this workspace open up, which we will use to create our experiment:
 
@@ -35,10 +37,11 @@ Detailed Steps for the Experiment:
    :alt: 5Gdocumentation
    :align: center
 
+
 **Workspace instructions:**
 
 #. Drag two “Xen VM” nodes onto the dashboard.
-#. Click into each node, and name one of them “Node1” and one as “Node2” respectively. These of course don’t have to be named as such.
+#. Click into each node, and name one of them **Node1** and one as **Node2** respectively. These of course don’t have to be named as such.
 #. Make sure each node has the Node Type: “emulab-xen”
 #. Click and drag from the edge of Node1 and connect the line to Node2, letting go of the left click when hovering over Node2.
 #. Click on the link node which was just created and change the name to “Link1”
@@ -47,26 +50,41 @@ Detailed Steps for the Experiment:
 
 **When this is all done it should look something like this:**
 
-//image
+.. figure:: /images/geni5.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * Now you will need to click on Site 1 and setup a site with which you will setup these resources. You can choose any instaGENI that has a green check. For this example we will use “Ohio State University InstaGENI”
 
-//image
+.. figure:: /images/geni6.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * Next, Near the top right corner, click on your name and choose the option “SSH Keys”. Click the option “generate and download an SSH keypair”
 
-//image
+.. figure:: /images/geni7.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * On the next screen you will need to setup a passphrase for this SSH key. This passphrase will need to be memorized as it will be used each time you SSH into a machine to verify that it is your own private key. 
 
 Download your Private Key once you have one generated. 
 
-//image
+.. figure:: /images/geni8.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * Next you will need to setup your SSH key to be used in the experiment. 
 Open a terminal and do the following:
 
-//image
+.. figure:: /images/geni9.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * After this, re-open your browser which is on the GENI website
 Hover over “Home” on the top Toolbar and then click “slices”
@@ -76,19 +94,31 @@ Next, click into the slice which you create
 
 * This page will contain information about our Nodes, including the hostname, status, and login information.
 
-//image
+.. figure:: /images/geni10.png
+   :alt: 5Gdocumentation
+   :align: center
+   
 
 * Using this information, open a terminal and ssh into Node1. Your ssh command should look like the following:
 
-//image
+.. figure:: /images/geni11.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * If done correctly, you should have a prompt to put in your ssh passphrase that you setup earlier. Your new command terminal should look like this:
 
-//image
+.. figure:: /images/geni12.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * Once you have gotten into node1, run the following command:
 
-//image
+.. figure:: /images/geni13.png
+   :alt: 5Gdocumentation
+   :align: center
+
 
 * If the network is set up correctly, you should be able to see successful ping results here with real data about the connection types. 
 
