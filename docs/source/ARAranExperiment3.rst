@@ -1,9 +1,9 @@
 Virtual Network Topology using GENI
 =====================================
 Platform: GENI 
-Resources Required: Account with GENI, Terminal capable of SSH
-Short Description: The experiment demonstrates creating a virtual network topology and testing its connection using a terminal.
-Detailed Description: The virtual network topology experiment utilizes the tools available on GENI’s website and allows us to connect two virtual machines on a network and test that network connection by using ssh to login to one of our nodes where we can run commands.
+Resources Required: Account with GENI, Terminal capable of SSH. 
+
+Experiment Description: The experiment demonstrates creating a virtual network topology and testing its connection using a terminal. The virtual network topology experiment utilizes the tools available on the GENI website and allows us to connect two virtual machines on a network and test that network connection by using ssh to login to one of our nodes where we can run commands.
 
 
 Detailed Steps for the Experiment:
@@ -40,11 +40,11 @@ Detailed Steps for the Experiment:
 
 **Workspace instructions:**
 
-#. Drag two “Xen VM” nodes onto the dashboard.
-#. Click into each node, and name one of them **Node1** and one as **Node2** respectively. These of course don’t have to be named as such.
-#. Make sure each node has the Node Type: “emulab-xen”
+#. Drag two **Xen VM** nodes onto the dashboard.
+#. Click into each node, and name one of them **Node1** and one as **Node2** respectively. These of course do not have to be named as such.
+#. Make sure each node has the Node Type: **emulab-xen**
 #. Click and drag from the edge of Node1 and connect the line to Node2, letting go of the left click when hovering over Node2.
-#. Click on the link node which was just created and change the name to “Link1”
+#. Click on the link node which was just created and change the name to **Link1**
 #. Make sure the Link Type is set to Ethernet.
 #. Note that you could set up interface information on each of the nodes (including name, bandwidth, IP, and Netmask) if you wanted to, but for this experiment it will not be required. 
 
@@ -55,14 +55,14 @@ Detailed Steps for the Experiment:
    :align: center
 
 
-* Now you will need to click on Site 1 and setup a site with which you will setup these resources. You can choose any instaGENI that has a green check. For this example we will use “Ohio State University InstaGENI”
+* Now you will need to click on Site 1 and setup a site with which you will setup these resources. You can choose any instaGENI that has a green check. For this example we will use **Ohio State University InstaGENI**
 
 .. figure:: /images/geni6.png
    :alt: 5Gdocumentation
    :align: center
 
 
-* Next, Near the top right corner, click on your name and choose the option “SSH Keys”. Click the option “generate and download an SSH keypair”
+* Next, Near the top right corner, click on your name and choose the option **SSH Keys**. Click the option **generate and download an SSH keypair**
 
 .. figure:: /images/geni7.png
    :alt: 5Gdocumentation
@@ -87,10 +87,10 @@ Open a terminal and do the following:
 
 
 * After this, re-open your browser which is on the GENI website
-Hover over “Home” on the top Toolbar and then click “slices”
+Hover over **Home** on the top Toolbar and then click **Slices**
 Next, click into the slice which you create
 
-* On this page, click on “Details” located under the “Manage Resources” block.
+* On this page, click on **Details** located under the **Manage Resources** block.
 
 * This page will contain information about our Nodes, including the hostname, status, and login information.
 
