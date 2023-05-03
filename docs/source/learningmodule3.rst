@@ -1,4 +1,4 @@
-Technical Details of RAN Systems
+Radio Access Networks
 =====================
 
 Abstract
@@ -10,7 +10,7 @@ Radio access network, or RAN, is the component of the network that allows for us
    :width: 400
    :align: center
 
-Radio Access Networks
+Technical Details of RAN Systems
 --------------------------------
 * Upon active use or powered-on state of the UEs, each base station sets the device's wireless channel, allowing for a connection from the UE to the base station. This connection is called “bearer service” and is used for data transmission.
 * Base stations set up a connection between the user’s device and the network’s control center. (Refer to NG-Core overview for more information on the control center). This connection results in service actions such as user authentication and tracking.
